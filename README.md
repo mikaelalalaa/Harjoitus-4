@@ -29,6 +29,10 @@ järjestelmän muutos yh
 ## c) Tiedän mitä teit viime kesän
 
 
+![image](https://user-images.githubusercontent.com/93308960/143080898-c53388ab-23d8-46e5-8e93-d9e930c7978a.png)
+
+
+![image](https://user-images.githubusercontent.com/93308960/143077160-46c0a79e-6fab-49a7-addf-ee7fcb3d0d5d.png)
 
 
 
