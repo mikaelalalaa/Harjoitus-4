@@ -45,3 +45,13 @@ järjestelmän muutos yh
 
 
 ## d) Asenna jokin toinen ohjelma asetuksineen.
+
+![image](https://user-images.githubusercontent.com/93308960/143084715-4407d45b-306b-40b3-9555-10b4560874fb.png)
+
+
+
+![image](https://user-images.githubusercontent.com/93308960/143084780-69130426-e897-45db-ae5b-41f56d647052.png)
+
+
+![image](https://user-images.githubusercontent.com/93308960/143084658-4a74ce84-b227-46df-aa14-2bbfb5ffe0e3.png)
+
