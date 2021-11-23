@@ -35,11 +35,29 @@ Kuten tuloksesta huomaa 6 ohjelmaa oli asennettu jo ja neljä ohjelmaa (micro, n
 
 ## b) CSI Pasila
 
+Ajoin aikajana komennon ja alla olevassa kuvassa näkyy muutokset joita ollaan tehty `etc` hakemistossa.
 
+```
+cd /etc/; sudo find -printf '%T+ %p\n'|sort|tail
+```
 ![image](https://user-images.githubusercontent.com/93308960/143049938-f715fc53-a304-4359-a70d-e57ac5b61433.png)
 
+Komennon tarkoitus:
 
-järjestelmän muutos yh
+* **cd /etc/;** tarkoittaa mistä hakemistosta aikajanaa haetaan
+* **sudo find** tarkoittaa että komento ajetaan sudo oikeuksilla eli pääkäyttäjä 
+* **-prinff** tarkentaa mitä asiaoita komento esittää
+* **%T+** kertoo tiedoston muokkauksen ajan ja päivän
+* **%p** kertoo tiedoston nimen
+* **\n** tekee rivinvaihdon
+* **sort** järjestää tulokset
+* **tail** tulostaa 10 viimeistä
+
+Ennen kun ajoin uudestaan aikajana komennon tein pieniä muutoksia. 
+
+Tein "reijän" palomuuriin mysql. Komento oli `sudo ufw allow mysql`.
+
+Sitten ajoin aikajanan komenmnon uudestaan ja kuten kuvassa näkyy että muutokset tuli voimaan. 
 
 ![image](https://user-images.githubusercontent.com/93308960/143051736-c5418d3a-624e-4b62-9de9-ea9a9932eb51.png)
 
