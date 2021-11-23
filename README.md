@@ -123,14 +123,54 @@ Kuvassa näkyy että tuli voimaan.
 
 ## d) Asenna jokin toinen ohjelma asetuksineen.
 
+Jotta pystyisin tehdä suunnittelemani mukaan, poistin apache2 komennolla `sudo apt-get autoremove apache2`.
 
+
+Eli aloitin taas tekemmällä hakemiston `srv/salt/apacete` sinne loin taas `init.sls` tiedoston.
+
+Ensiksi laitoin koodiski alla olevan tekstin 
+
+```
+apache2:
+  pkg.installed:
+      - pkgs: 
+        - apache 2
+  
+testi  
+  file.managed:
+      - name: /etc/apache2/sites-available
+      - mode: insert
+      - content: "portti 80"
+```
+
+Tallensin ja ajoin komennon 
+
+```
+sudo salt-call --local -l info state.apply apacete
+```
+
+Noh niinkuin alla olevasta kuvasta näkyy apache2 asennus onnistui mutta se file.managed ei onnistunut.
 
 ![image](https://user-images.githubusercontent.com/93308960/143084715-4407d45b-306b-40b3-9555-10b4560874fb.png)
 
+Joten päätimpä muokata `init.sls` tiedostoani.
 
+Kirjoitin tiedostoon alla olevan tekstin.
 
-![image](https://user-images.githubusercontent.com/93308960/143084780-69130426-e897-45db-ae5b-41f56d647052.png)
+```
+apache2:
+  pkg.installed:
+      - pkgs: 
+        - apache 2
+  
+test  
+  cmd.run:
+    - name: ufw allow apache    
+```
 
+ajoin saman komennon uudestaan *`sudo salt-call --local -l info state.apply apacete`*
+
+Alla olevasta kuvasta näkyy että muutokset onnistui.
 
 ![image](https://user-images.githubusercontent.com/93308960/143084658-4a74ce84-b227-46df-aa14-2bbfb5ffe0e3.png)
 
