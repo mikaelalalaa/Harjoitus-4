@@ -5,13 +5,32 @@ Tehtävät löytyvät opettajamme [Tero Karvisen sivulta](https://terokarvinen.c
 
 ## a) Captain obvious
 
+Aluksi ladattiin saltin avulla 10 eri ohjelmaa. Ensin tein tiedoston `init.sls` `srv/salt/tenfave` hakemistoon.
 
+Ohjelmoiksi valitsin
+
+ * apache 
+ * openssh-server
+ * mysql-server
+ * net-tools
+ * nmap
+ * micro
+ * gimp
+ * vim
+ * tree
+ * filezillan
 
 ![image](https://user-images.githubusercontent.com/93308960/143049544-41f4bef5-356a-41cd-ab7c-5ed5c1282c9a.png)
 
+Tämän jälkeen tallensin tiedoston ja ajoin komennon
+
+```
+sudo salt-call --local -l info state.apply tenfave
+```
 
 ![image](https://user-images.githubusercontent.com/93308960/143049655-f687b1e3-446f-4489-9819-01e3b607a56a.png)
 
+Kuten tuloksesta huomaa 6 ohjelmaa oli asennettu jo ja neljä ohjelmaa (micro, net-tools, tree ja vim) saatii onnistuneestin asennettua.
 
 
 ## b) CSI Pasila
