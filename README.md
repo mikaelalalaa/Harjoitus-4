@@ -36,6 +36,7 @@ järjestelmän muutos yh
 
 ![image](https://user-images.githubusercontent.com/93308960/143081654-90d98326-e7a9-4a4b-a207-a3d6abfa2159.png)
 
+![image](https://user-images.githubusercontent.com/93308960/143083129-23272a19-ed7c-46b8-8949-c31bdb8a3af6.png)
 
 
 
