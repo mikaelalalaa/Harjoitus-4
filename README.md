@@ -32,7 +32,10 @@ järjestelmän muutos yh
 ![image](https://user-images.githubusercontent.com/93308960/143080898-c53388ab-23d8-46e5-8e93-d9e930c7978a.png)
 
 
-![image](https://user-images.githubusercontent.com/93308960/143077160-46c0a79e-6fab-49a7-addf-ee7fcb3d0d5d.png)
+![image](https://user-images.githubusercontent.com/93308960/143081754-935aba59-55ab-4333-b3f0-4e6a7ab11186.png)
+
+![image](https://user-images.githubusercontent.com/93308960/143081654-90d98326-e7a9-4a4b-a207-a3d6abfa2159.png)
+
 
 
 
