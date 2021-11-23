@@ -31,4 +31,9 @@ järjestelmän muutos yh
 
 
 
+
+![image](https://user-images.githubusercontent.com/93308960/143070879-86dc076a-2e5d-47a2-b6dd-d0fe09b130d7.png)
+
+
+
 ## d) Asenna jokin toinen ohjelma asetuksineen.
