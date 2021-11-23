@@ -65,7 +65,7 @@ Sitten ajoin aikajanan komenmnon uudestaan ja kuten kuvassa näkyy että muutoks
 
 ## c) Tiedän mitä teit viime kesän
 
-Tein muutoksia nano tiedostooni. Kirjoitin alla tekstin `.nanorc` tiedostoon
+Tein tyyli muutoksia nano tiedostooni. Kirjoitin alla olevan tekstin `.nanorc` tiedostoon
 
 ```
 ## configure file
@@ -104,17 +104,22 @@ nano:
 
 ```
 
-![image](https://user-images.githubusercontent.com/93308960/143081654-90d98326-e7a9-4a4b-a207-a3d6abfa2159.png)
+Ajoin komennon 
 
-![image](https://user-images.githubusercontent.com/93308960/143083129-23272a19-ed7c-46b8-8949-c31bdb8a3af6.png)
+```
+sudo salt-call --local -l info state.apply nanno
+```
 
-
+Kuten kuvasta näkyy asennus ja muutokset onnistuivat.
 
 ![image](https://user-images.githubusercontent.com/93308960/143070879-86dc076a-2e5d-47a2-b6dd-d0fe09b130d7.png)
 
+Tämän jälkeen kävin vielä katsomassa tyyli muutokset, tulivat voimaan poiston jälkeen.
 
+Kuvassa näkyy että tuli voimaan.
 
-![image](https://user-images.githubusercontent.com/93308960/143081754-935aba59-55ab-4333-b3f0-4e6a7ab11186.png)
+![image](https://user-images.githubusercontent.com/93308960/143091237-979ba7c5-d18f-4280-928a-4159d607fe9b.png)
+
 
 ## d) Asenna jokin toinen ohjelma asetuksineen.
 
