@@ -65,11 +65,44 @@ Sitten ajoin aikajanan komenmnon uudestaan ja kuten kuvassa näkyy että muutoks
 
 ## c) Tiedän mitä teit viime kesän
 
+Tein muutoksia nano tiedostooni. Kirjoitin alla tekstin `.nanorc` tiedostoon
+
+```
+## configure file
+
+set linenumbers
+set titlecolor yellow,black
+set numbercolor yellow
+set keycolor magenta
+```
+
+Tämän jälkeen tein aikajana komennon jossa näky että tiedostolle `.nanorc` on tehty muutoksia
 
 ![image](https://user-images.githubusercontent.com/93308960/143080898-c53388ab-23d8-46e5-8e93-d9e930c7978a.png)
 
+Tämän jälkeen poistin nano ohjelman komennolla `sudo apt remove nano`.
 
-![image](https://user-images.githubusercontent.com/93308960/143081754-935aba59-55ab-4333-b3f0-4e6a7ab11186.png)
+Sitten tein hakemiston `srv/salt/nanno` ja loin teksti tiedoston `init.sls`.
+
+Johon laitoin alla olevan tekstin:
+
+```
+nano:
+  pkg.installed
+
+/home/roott/:
+  file.directory:
+    - source: /home/roott/
+    - user: roott
+    - mode: 700
+
+/home/roott/.nanorc:
+  file.managed:
+    - source: /home/roott/.nanorc
+    - user: roott
+    - mode: 700
+
+```
 
 ![image](https://user-images.githubusercontent.com/93308960/143081654-90d98326-e7a9-4a4b-a207-a3d6abfa2159.png)
 
@@ -81,7 +114,11 @@ Sitten ajoin aikajanan komenmnon uudestaan ja kuten kuvassa näkyy että muutoks
 
 
 
+![image](https://user-images.githubusercontent.com/93308960/143081754-935aba59-55ab-4333-b3f0-4e6a7ab11186.png)
+
 ## d) Asenna jokin toinen ohjelma asetuksineen.
+
+
 
 ![image](https://user-images.githubusercontent.com/93308960/143084715-4407d45b-306b-40b3-9555-10b4560874fb.png)
 
