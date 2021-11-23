@@ -1,5 +1,6 @@
 # Harjoitus-4
 
+Tässä harjoituksessa katsottiin aikajanaa ja mitä itse komento tarkoittaa. Asennettii myös paljon sovelluksia saltin avulla ja myös vähän konfiguroitiin niitä asennuksen yhetydessä.
 
 Tehtävät löytyvät opettajamme [Tero Karvisen sivulta](https://terokarvinen.com/2021/configuration-management-systems-palvelinten-hallinta-ict4tn022-2021-autumn/#h4-aikajana)
 
@@ -174,3 +175,6 @@ Alla olevasta kuvasta näkyy että muutokset onnistui.
 
 ![image](https://user-images.githubusercontent.com/93308960/143084658-4a74ce84-b227-46df-aa14-2bbfb5ffe0e3.png)
 
+## lähteet
+
+[Tero Karvisen sivut](https://terokarvinen.com/2021/configuration-management-systems-palvelinten-hallinta-ict4tn022-2021-autumn/)
